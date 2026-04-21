@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title>Calculadora Básica</title>
     <style>
         body { font-family: sans-serif; display: flex; justify-content: center; padding-top: 50px; background-color: #f4f4f9; }
@@ -13,10 +14,23 @@
         .op { background-color: #007bff; color: white; }
         .op:hover { background-color: #0056b3; }
         #resultado-txt { margin-top: 20px; text-align: center; font-size: 1.3rem; color: #333; font-weight: bold; border-top: 1px solid #eee; padding-top: 15px; }
+=======
+    <title>Actividad: Generador de Listas</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; display: flex; justify-content: center; padding-top: 50px; background-color: #f0f2f5; }
+        .card { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); width: 100%; max-width: 400px; }
+        h2 { color: #333; margin-top: 0; }
+        input { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box; }
+        button { width: 100%; padding: 10px; background-color: #28a745; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; }
+        button:hover { background-color: #218838; }
+        #contenedor-listas { margin-top: 20px; }
+        .item-lista { background: #e9ecef; padding: 8px; margin-bottom: 5px; border-radius: 4px; font-size: 0.9rem; color: #495057; border-left: 5px solid #28a745; }
+>>>>>>> 350d2cf5b79ee9a0aff8607f43d402955f8cea10
     </style>
 </head>
 <body>
 
+<<<<<<< HEAD
     <div class="calc-card">
         <h3 style="text-align:center; margin-top:0;">Calculadora JS</h3>
         
@@ -31,6 +45,17 @@
         </div>
 
         <div id="resultado-txt">Resultado: 0</div>
+=======
+    <div class="card">
+        <h2>Generador Dinámico</h2>
+        <p>Introduce un número para crear listas:</p>
+        
+        <input type="number" id="inputNumero" placeholder="Ejemplo: 5" min="1">
+        <button id="btnGenerar">Generar Listas</button>
+
+        <div id="contenedor-listas">
+            </div>
+>>>>>>> 350d2cf5b79ee9a0aff8607f43d402955f8cea10
     </div>
 
     <script src="app.js"></script>
