@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Básica</title>
+    <style>
+        body { font-family: sans-serif; display: flex; justify-content: center; padding-top: 50px; background-color: #f4f4f9; }
+        .calc-card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); width: 300px; }
+        input { width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box; text-align: center; font-size: 1.1rem; }
+        .botones { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        button { padding: 15px; border: none; border-radius: 6px; cursor: pointer; font-size: 1.2rem; font-weight: bold; transition: 0.2s; }
+        .op { background-color: #007bff; color: white; }
+        .op:hover { background-color: #0056b3; }
+        #resultado-txt { margin-top: 20px; text-align: center; font-size: 1.3rem; color: #333; font-weight: bold; border-top: 1px solid #eee; padding-top: 15px; }
+    </style>
+</head>
+<body>
+
+    <div class="calc-card">
+        <h3 style="text-align:center; margin-top:0;">Calculadora JS</h3>
+        
+        <input type="number" id="num1" placeholder="Primer número">
+        <input type="number" id="num2" placeholder="Segundo número">
+
+        <div class="botones">
+            <button class="op" onclick="calcular('+')">+</button>
+            <button class="op" onclick="calcular('-')">-</button>
+            <button class="op" onclick="calcular('*')">×</button>
+            <button class="op" onclick="calcular('/')">÷</button>
+        </div>
+
+        <div id="resultado-txt">Resultado: 0</div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
